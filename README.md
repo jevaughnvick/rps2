@@ -1,1 +1,1 @@
-# rps2
+# Rock paper scissors part 2
