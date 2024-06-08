@@ -11,3 +11,19 @@ function getComputerChoice(){
     }
 }
 
+function getHumanChoice(){
+
+    while (true) {
+        let choice = prompt("Enter 'R' for Rock, 'P' for Paper or 'S' for Scissors: ", "");
+        if(choice === "R" || choice === "r"){
+            return "Rock"
+        }else if(choice === "P" || choice === "p"){
+            return "Paper"
+        }else if(choice === "S" || choice === "s"){
+            return "Scissors"
+        }else{
+            alert("Please choose Rock, Paper or Scissors.")
+        }
+    }
+
+}
