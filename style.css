@@ -10,7 +10,6 @@
     height: 100vh;
 }
 .screen-cont{
-    outline: auto;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -21,7 +20,6 @@
     height: 100px;
 }
 .partition, .main-screen, .second-screen{
-    border: 1px solid purple;
     flex: 1;
 }
 .main-screen{
@@ -49,8 +47,8 @@
 button{
     outline: none;
     border: none;
-    height: 90%;
-    width: 25%;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     font-family: inherit;
     font-size: 2em;
