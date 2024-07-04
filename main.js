@@ -8,6 +8,68 @@ const computerResult = document.querySelector(".child-two");
 let humanScore = 0;
 let computerScore = 0;
 
+window.addEventListener("keypress", (e) => {
+
+    if(e.key === "r"){
+
+        const humanChoice = "Rock";
+        const computerChoice = getComputerChoice();
+    
+        playRound(humanChoice, computerChoice);
+
+        if(!(humanScore < 5 && computerScore < 5)){
+
+            let winner = getWinner(humanScore, computerScore);
+
+            showWinner(winner);
+            humanScore = 0;
+            playerOneResult.textContent = `Player One: ${humanScore}`;;
+            computerScore = 0;
+            computerResult.textContent = `Computer: ${humanScore}`;;
+        };
+
+    }
+
+    if(e.key === "p"){
+
+        const humanChoice = "Paper";
+        const computerChoice = getComputerChoice();
+    
+        playRound(humanChoice, computerChoice);
+
+        if(!(humanScore < 5 && computerScore < 5)){
+
+            let winner = getWinner(humanScore, computerScore);
+
+            showWinner(winner);
+            humanScore = 0;
+            playerOneResult.textContent = `Player One: ${humanScore}`;;
+            computerScore = 0;
+            computerResult.textContent = `Computer: ${humanScore}`;;
+        };
+
+    }
+
+    if(e.key === "s"){
+
+        const humanChoice = "Scissors";
+        const computerChoice = getComputerChoice();
+    
+        playRound(humanChoice, computerChoice);
+
+        if(!(humanScore < 5 && computerScore < 5)){
+
+            let winner = getWinner(humanScore, computerScore);
+
+            showWinner(winner);
+            humanScore = 0;
+            playerOneResult.textContent = `Player One: ${humanScore}`;;
+            computerScore = 0;
+            computerResult.textContent = `Computer: ${humanScore}`;;
+        };
+
+    }
+});
 
 buttons.forEach(button => button.addEventListener("click", e => {
 
